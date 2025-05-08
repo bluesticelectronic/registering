@@ -5,13 +5,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Register</title>
   <style>
+    * {
+      box-sizing: border-box;
+    }
     body {
       font-family: Arial, sans-serif;
       background-color: #edf3fa;
       display: flex;
       flex-direction: column;
       align-items: center;
-      padding-top: 20px;
+      padding: 20px;
       margin: 0;
     }
 
@@ -20,7 +23,8 @@
       border-radius: 12px;
       border: 1px solid #ccc;
       padding: 30px;
-      width: 400px;
+      width: 100%;
+      max-width: 400px;
       text-align: center;
     }
 
@@ -76,7 +80,6 @@
   </div>
 
   <div class="container">
-    <!-- Register Form -->
     <form id="registerForm">
       <div class="header">REGISTER ACCOUNT</div>
       <input type="text" name="fullname" placeholder="Full Name" required />
@@ -86,7 +89,6 @@
       <button type="submit">Register</button>
     </form>
 
-    <!-- Payment Section -->
     <div id="paymentSection">
       <div class="header">PAYMENT METHOD</div>
       <select id="paymentMethod" required>
@@ -108,7 +110,6 @@
       <button id="confirmPaymentBtn">Confirm Payment</button>
     </div>
 
-    <!-- Activation Section -->
     <div id="activationSection">
       <div class="header">ACTIVATION CODE</div>
       <input type="text" id="activationCodeInput" placeholder="Enter Activation Code" />
@@ -116,7 +117,6 @@
       <p id="codeMessage" class="error"></p>
     </div>
 
-    <!-- Success Section -->
     <div id="successSection">
       <div class="header">✅ Activation Successful!</div>
       <p>Click below to continue.</p>
